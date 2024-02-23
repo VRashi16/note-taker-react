@@ -1,0 +1,48 @@
+.note{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+
+
+.note__text{
+  flex: 1;
+  border: none;
+  background-color: inherit;
+  resize: none;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  outline: none;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.note__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.note__time{
+  font-size: 0.8rem;
+}
+
+.note__icon{
+  width: 18px;
+  opacity: 0.2;
+  cursor: pointer;
+  padding: 1px;
+  margin-left: 6px;
+  transition: 300ms ease-in-out;
+}
+.note__icon:hover{
+  transform: scaleY(1.2);
+  opacity: 1;
+}
+.note__icon:active{
+  transform: rotate(30deg);
+}
